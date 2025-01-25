@@ -15,7 +15,7 @@ var summaries = new[]
 app.Use((context, next) =>
 {
     next();
-    context.Response.WriteAsync("Hello World Version1");
+    context.Response.WriteAsync("Hello World Version1 to Version2 Continous deployment");
     return Task.CompletedTask;  
 });
 app.MapGet("/weatherforecast", () =>
